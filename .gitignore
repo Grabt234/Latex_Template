@@ -1,9 +1,13 @@
 *.out
 *.blg
-*.fdb_latex
+*.fdb_latexmk
 *.aux
 *.bcf
 *.xml
 *.gz
 *.toc
 *.pdf
+*.fls
+*.log
+*.lof
+*.bbl
