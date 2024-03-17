@@ -1,0 +1,47 @@
+\documentclass[class=report,11pt,crop=false]{standalone}
+
+\usepackage[backend=biber, style=ieee]{biblatex}
+\bibliography{../Bibliography/References.bib}
+
+\input{../Style/ChapterStyle.tex}
+\input{../FrontMatter/Glossary.tex}
+\input{../FrontMatter/Symbols.tex}
+
+\begin{document}
+\ifstandalone
+    \tableofcontents
+    \printnoidxglossary[type=Abbreviations,nonumberlist,title={Abbreviations}] % abbreviations
+    \printnoidxglossary[type=Symbols,nonumberlist,title={List of Symbols}] % symbols
+\fi
+
+
+\chapter{Chapter 1\label{ch:chapter1}}
+
+% An interesting quote to start your paragraph
+\epigraph{`To defend a country you need an army, but to defend a civilization you need education'}%
+{\emph{---\,Rabbi Lord Jonathan Sacks}}
+\vspace{0.5cm}
+
+\section{Section}
+
+This is a section
+
+\subsection{SubSection}
+
+This is from the glossary \gls{fst}
+
+\subsubsection{SubSubSection}
+
+This is a SubSubSection it is citing dont remove the citation until you have inserted
+another \cite{levanon2004radar}
+
+\subsubsection{Another SubSubSection}
+
+This is a SubSubSection which shows a \gls{SymbolOne}
+
+
+\ifstandalone
+    \printbibliography  % Print the bibliography
+\fi
+
+\end{document}
