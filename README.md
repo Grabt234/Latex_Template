@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-- Install [Strawberry Perl](https://strawberryperl.com/) (don't asl, I don't know)
+- Install [Strawberry Perl](https://strawberryperl.com/) (don't ask, I don't know)
 - Install [MikTex](https://miktex.org/)
 - Install [VSCode](https://code.visualstudio.com/)
 - Install LaTex Workshop VSCode plugin
