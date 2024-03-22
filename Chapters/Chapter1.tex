@@ -4,16 +4,20 @@
 \bibliography{../Bibliography/References.bib}
 
 \input{../Style/ChapterStyle.tex}
-\input{../FrontMatter/Glossary.tex}
+\input{../FrontMatter/Acronyms.tex}
 \input{../FrontMatter/Symbols.tex}
+\input{../FrontMatter/Abbreviations.tex}
+
 
 \begin{document}
 \ifstandalone
     \tableofcontents
-    \printnoidxglossary[type=Abbreviations,nonumberlist,title={Abbreviations}] % abbreviations
-    \printnoidxglossary[type=Symbols,nonumberlist,title={List of Symbols}] % symbols
+    \listoffigures
+    \listoftables
+    \printnoidxglossary[type=\acronymtype,,nonumberlist]
+    \printnoidxglossary[type=Symbols,nonumberlist]
+    \printnoidxglossary[type=Abbreviations,nonumberlist] % abbreviations
 \fi
-
 
 \chapter{Chapter 1\label{ch:chapter1}}
 
@@ -24,11 +28,25 @@
 
 \section{Section}
 
-This is a section
+This is a section \gls{PAM}
 
 \subsection{SubSection}
 
 This is from the glossary \gls{fst}
+
+\begin{table}[H]
+    \label{table:DeepSeaNoise2006_acoustic_levels}
+    \centering
+    \begin{tabular}{l|l}
+        Source Name                     & Broadband Source Level ( \( dB \) re 1 \(\mu Pa \) at 1 m) \\ \hline
+        Supply Ship (example: Kigoriak) & 171                                                        \\
+        Large Tanker                    & 181                                                        \\
+        Sperm Whale Clicks              & 163-223                                                    \\
+        Humpback Whale Song             & 144-174                                                    \\
+    \end{tabular}
+    \caption{This is a table with a caption}
+\end{table}
+
 
 \subsubsection{SubSubSection}
 

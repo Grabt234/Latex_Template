@@ -6,9 +6,11 @@
 
 \usepackage{standalone} % Best loaded last in the preamble
 
-% insert gloassary in preamble
-\input{FrontMatter/Glossary.tex}
+% insert glossaries in preamble
+\input{FrontMatter/Abbreviations.tex}
+\input{FrontMatter/Acronyms.tex.}
 \input{FrontMatter/Symbols.tex}
+
 \bibliography{Bibliography/References.bib}
 
 \begin{document}
@@ -23,12 +25,12 @@
 % Add a list of contents, tables and figures
 \tableofcontents
 \listoffigures
+\listoftables
 
-% Insert glossary and symbols
-\glsresetall
-\printnoidxglossary[type=Abbreviations,nonumberlist,title={Abbreviations}] % abbreviations
-\printnoidxglossary[type=Symbols,nonumberlist,title={List of Symbols}] % symbols
-\newpage
+% Insert glossaries
+\printnoidxglossary[type=\acronymtype,,nonumberlist]
+\printnoidxglossary[type=Symbols,nonumberlist]
+\printnoidxglossary[type=Abbreviations,nonumberlist] % abbreviations
 
 \pagenumbering{arabic} % Corrected command
 
