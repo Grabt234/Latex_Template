@@ -5,6 +5,12 @@
 - Install [Strawberry Perl](https://strawberryperl.com/) (don't ask, I don't know)
 - Install [MikTex](https://miktex.org/)
 - Install [VSCode](https://code.visualstudio.com/)
+- Install [InkScape](https://inkscape.org/)
+
+>- Navigate to the install folder of InkScape and copy the path to the foldwer with `bin` in it
+>- Open environment variables and add this as a new item to path
+>- You can now place SVGs in the `Figures` folder and add them to project - very high quality 
+
 - Install LaTex Workshop VSCode plugin
 - Clone this repo
 - Open it in VSCode
